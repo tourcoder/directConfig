@@ -185,3 +185,4 @@ www-cdn.icloud.com.akadns.net
 .icloud.net.cn
 .icloudapple.cn
 .appleid.apple.com
+.microsoftteams.com
