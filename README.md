@@ -7,12 +7,14 @@
 规则原理：
 
 
-GEOIP(cn/private) - 走本地网络
+GEOIP(cn/private) - 本地网络
 
-direct.list - 走本地网络 
+direct.list - 本地网络
 
-special.list -  走指定网络
+google.list - Google 专线
 
-兜底网络是非本地网络
+special.list -  指定网络
+
+兜底策略是 proxy
 
 **纯自己工作学习使用，其他不懂**
