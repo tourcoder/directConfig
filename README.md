@@ -4,6 +4,15 @@
 
 不在本名单里面的都视为无法被正常访问的，都走指定网络。
 
-规则原理：GEOIP(cn/private) + direct(本地) + google(Google 指定) + 指定网络(兜底)
+规则原理：
+
+
+GEOIP(cn/private) - 走本地网络
+
+direct.list - 走本地网络 
+
+special.list -  走指定网络
+
+兜底网络是非本地网络
 
 **纯自己工作学习使用，其他不懂**
