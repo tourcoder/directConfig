@@ -11,7 +11,7 @@ directConfig
 
 GEOIP(cn/private) - 本地网络
 
-direct.list - 本地网络
+cndirect.list - 在 cn 本地能够访问的，走本地网络
 
 google.list - Google 专线
 
