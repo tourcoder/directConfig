@@ -292,7 +292,6 @@ DOMAIN-SUFFIX,oxfordmusiconline.com
 DOMAIN-SUFFIX,passthepopcorn.me
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypal.me
-DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,pcbeta.com
 DOMAIN-SUFFIX,plex.tv
 DOMAIN-SUFFIX,pnas.org
@@ -429,5 +428,4 @@ USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
 USER-AGENT,MicroMessenger%20Client
 USER-AGENT,NeteaseMusic*
-USER-AGENT,PayPal*
 USER-AGENT,WeChat*
