@@ -15,6 +15,8 @@ direct.list - 在某国能直接访问的或者要求只能本地访问的，走
 
 google.list - Google 专线
 
+apple.list -  Apple 专线，基本都是走本地网络
+
 special.list -  指定网络
 
 兜底策略是 proxy
