@@ -11,7 +11,7 @@ directConfig
 
 GEOIP(cn/private) - 本地网络
 
-cndirect.list - 在 cn 本地能够访问的，走本地网络
+direct.list - 在某国能直接访问的或者要求只能本地访问的，走本地网络
 
 google.list - Google 专线
 
@@ -25,7 +25,7 @@ special.list -  指定网络
 
 规则原理
 
-blocked-in-cn.list - 在 cn 本地无法访问的，走自己选择的指定网络
+blocked.list - 在某国本地无法访问的，走自己选择的指定网络
 
 google.list - Google 专线
 
