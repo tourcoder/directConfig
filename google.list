@@ -272,3 +272,5 @@ DOMAIN-SUFFIX,.googlevideo.com
 DOMAIN-SUFFIX,.googleweblight.com
 DOMAIN-SUFFIX,.googleyoutube.com
 DOMAIN-SUFFIX,.googlezip.net
+#Google voice
+IP-CIDR,74.125.23.127/32
