@@ -14,13 +14,17 @@ jobs:
      # 拉取代码
      - uses: actions/checkout@v2 
 
+     # 检查当前目录
+     - name: Check the folder
+       run: ls -a
+
      # 删除 .git 文件夹
      - name: Remove .git folder
        run: rm -rf directConfig/.git
 
      # 重命名文件夹
      - name: List files before renaming
-       run: ls -l
+       run: ls -a
 
      - name: Rename directory
        run: mv directConfig rules
