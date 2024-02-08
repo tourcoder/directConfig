@@ -26,21 +26,13 @@ jobs:
      - name: List files before renaming
        run: ls -a
 
-     # 回到上一级目录
-     - name: Go to the parent folder
-       run: cd ..
+     # 创建 rules 文件夹，并将内容复制到里面
+     - name: Create rules folder and move all files into it
+       run: mkdir rules && mv *.list rules/
 
      # 检查当前目录的文件
      - name: List files before renaming
        run: ls -a
-       
-     # 重命名文件夹
-     - name: Rename directory
-       run: mv directConfig rules
-
-     # 列出重命名后的文件夹
-     - name: List files after renaming
-       run: ls -l
        
      # 将内容 SCP 到 VPS 服务器
      - name: SCP rules 
