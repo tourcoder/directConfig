@@ -29,6 +29,10 @@ jobs:
      # 回到上一级目录
      - name: Go to the parent folder
        run: cd ..
+
+     # 检查当前目录的文件
+     - name: List files before renaming
+       run: ls -a
        
      # 重命名文件夹
      - name: Rename directory
