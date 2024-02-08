@@ -14,18 +14,23 @@ jobs:
      # 拉取代码
      - uses: actions/checkout@v2 
 
-     # 检查当前目录
+     # 检查当前目录的文件
      - name: Check the folder
        run: ls -a
 
-     # 删除 .git 文件夹
-     - name: Remove .git folder
-       run: rm -rf directConfig/.git
-
-     # 重命名文件夹
+     # 删除 .git 和 .github 文件夹
+     - name: Remove .git and .github folder
+       run: rm -rf .git .github
+       
+     # 检查当前目录的文件
      - name: List files before renaming
        run: ls -a
 
+     # 回到上一级目录
+     - name: Go to the parent folder
+       run: cd ..
+       
+     # 重命名文件夹
      - name: Rename directory
        run: mv directConfig rules
 
