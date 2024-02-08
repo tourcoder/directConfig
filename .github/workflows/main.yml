@@ -1,0 +1,34 @@
+name: deploy directConfig
+
+on:
+  push:
+    branches: [ master ] # master 分支上 push 触发部署
+
+jobs:
+
+  build:
+    # 在 ubuntu 上构建
+    runs-on: ubuntu-latest 
+
+    steps:
+     # 拉取代码
+     - uses: actions/checkout@v2 
+
+     # 删除 .git 文件夹
+     - name: Remove .git folder
+       run: rm -rf directConfig/.git
+
+     # 重命名文件夹
+     - name: Rename directory
+       run: mv directConfig rules
+
+     # 将内容 SCP 到 VPS 服务器
+     - name: SCP rules 
+       uses: appleboy/scp-action@master
+       with:
+        host: ${{ secrets.VPS_IP }}  # VPS 的 IP
+        username: ${{ secrets.VPS_USER }}  # VPS 登录用户名
+        port: ${{ secrets.VPS_PORT }} # VPS 端口
+        key: ${{ secrets.SSH_KEY }} # 前面创建的私钥
+        source: "rules" # 要上传的内容
+        target: ${{ secrets.VPS_PATH }} # SCP 到的目录
