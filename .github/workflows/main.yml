@@ -19,9 +19,16 @@ jobs:
        run: rm -rf directConfig/.git
 
      # 重命名文件夹
+     - name: List files before renaming
+       run: ls -l
+
      - name: Rename directory
        run: mv directConfig rules
 
+     # 列出重命名后的文件夹
+     - name: List files after renaming
+       run: ls -l
+       
      # 将内容 SCP 到 VPS 服务器
      - name: SCP rules 
        uses: appleboy/scp-action@master
