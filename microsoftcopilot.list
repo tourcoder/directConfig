@@ -1,8 +1,8 @@
-edgeservices.bing.com
-d.docs.live.net
-edge.microsoft.com
-proteus-assetstore.azurewebsites.net
-nexusrules.officeapps.live.com
-functional.events.data.microsoft.com
-browser.events.data.msn.cn
-services.bingapis.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+DOMAIN-SUFFIX,d.docs.live.net
+DOMAIN-SUFFIX,edge.microsoft.com
+DOMAIN-SUFFIX,proteus-assetstore.azurewebsites.net
+DOMAIN-SUFFIX,nexusrules.officeapps.live.com
+DOMAIN-SUFFIX,functional.events.data.microsoft.com
+DOMAIN-SUFFIX,browser.events.data.msn.cn
+DOMAIN-SUFFIX,services.bingapis.com
